@@ -22,7 +22,7 @@ Set the necessary environment variables for the deployment:
 oc set env deployment/smtp SENDER_EMAIL=your-email@gmail.com RECEIVER_EMAIL=receiver-email@gmail.com
 ```
 
-### 4. Manually Trigger a Build
+### 4. Manually Trigger a Build(If needed, check `oc get pods`)
 ```sh
 oc start-build smtp
 ```

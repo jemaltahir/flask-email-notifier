@@ -19,7 +19,7 @@ oc new-app https://github.com/jemaltahir/flask-email-notifier.git --strategy=doc
 ### 3. Set Environment Variables
 Set the necessary environment variables for the deployment:
 ```sh
-oc set env deployment/smtp SENDER_EMAIL=your-email@gmail.com RECEIVER_EMAIL=receiver-email@gmail.com
+oc set env deployment/smtp SENDER_EMAIL=sender@domain.com RECEIVER_EMAIL=destination@domain.com
 ```
 
 ### 4. Manually Trigger a Build(If needed, check `oc get pods`)
